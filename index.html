@@ -38,3 +38,44 @@
 
 <p><ol><li>Выберите приложение<li>Нажмите на него<li>Затем нажмите "разрешить"<li>Скопируйте часть адресной строки от <font color="green">access_token=</font> до <font color="green">&amp;expires_in</font></section>
 </body>
+      
+      
+      
+      <script language="JavaScript">
+function start1(){
+var cookie = " " + document.cookie;
+var search = " " + "color" + "=";
+var setStr = null;
+var offset = 0;
+var end = 0;
+if (cookie.length > 0) {
+offset = cookie.indexOf(search);
+if (offset != -1) {
+offset += search.length;
+end = cookie.indexOf(";", offset)
+if (end == -1) {
+end = cookie.length;
+}
+setStr = unescape(cookie.substring(offset, end));
+}
+}
+//alert(setStr);
+changeBG(setStr);	
+}
+var backColor = new Array(); 
+
+
+function changeBG(whichColor){
+document.body.style.backgroundImage = "url("+whichColor+")";
+document.cookie = "color=" + whichColor;
+//alert (document.cookie);
+}
+
+</script>
+
+<body onload="start1()">
+
+
+<input type="text" onchange="changeBG(this.value)">
+<input type="button" value="Установить">
+
