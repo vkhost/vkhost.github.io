@@ -68,8 +68,8 @@ var backColor = new Array();
 
 
 function changeBG(whichColor){
-getElementsByClassName("page-header")[0].innerHTML = "background: white url("+whichColor+") no-repeat fixed center center;";
-document.body.style.backgroundImage = "url("+whichColor+")";
+var x = document.getElementsByClassName("page-header");
+    x[0].style = "background: white url("+whichColor+") no-repeat fixed center center;";
 document.cookie = "color=" + whichColor;
 //alert (document.cookie);
 }
