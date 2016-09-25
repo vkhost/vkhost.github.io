@@ -14,10 +14,11 @@
    
     </section>
 
-    <section class="main-content">
+   <section class="main-content">
       Введите права через запятую: 
-<input value="friends,photos,audio,video,docs,notes,pages,status,offers,questions,wall,groups,messages,notifications,stats,ads,market,offline" name="scope" class="search-bar">
-<button class="button button-small button-green" onclick="if (document.getElementsByName(&#39;scope&#39;)[0].value){window.open(&#39;https://oauth.vk.com/authorize?client_id=3116505&amp;scope=&#39;+document.getElementsByName(&#39;scope&#39;)[0].value+&#39;&amp;redirect_uri=https://oauth.vk.com/blank.html&amp;display=page&amp;response_type=token&#39;)};">Готово</button>
+<input value="friends,photos,audio,video,docs,notes,pages,status,offers,questions,wall,groups,messages,notifications,stats,ads,market,offline" name="scope" class="search-bar"><br>
+Введите ID приложения: <input value="3116505" name="aid" class="search-bar">
+<button class="button button-small button-green" onclick="if (document.getElementsByName(&#39;scope&#39;)[0].value){window.open(&#39;https://oauth.vk.com/authorize?client_id=&#39;+document.getElementsByName(&#39;aid&#39;)[0].value+&#39;&amp;scope=&#39;+document.getElementsByName(&#39;scope&#39;)[0].value+&#39;&amp;redirect_uri=https://oauth.vk.com/blank.html&amp;display=page&amp;response_type=token&#39;)};">Готово</button><br><small>Внимание! Не убирайте право "offline", если планируете использовать токен с другого IP адреса (например на хостинге)</small>
 <h3>Инструкция</h3>
 <p><ol><li>Введите права<li>Нажмите "готово"<li>Затем нажмите "разрешить"<li>Скопируйте часть адресной строки от <font color="green">access_token_{ID}=</font></ol></p><br><br><a href="/">На главную</a></section>
 </body>
