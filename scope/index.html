@@ -21,11 +21,21 @@
 <button class="button button-small button-green" onclick="if (document.getElementsByName(&#39;scope&#39;)[0].value){window.open(&#39;https://oauth.vk.com/authorize?client_id=&#39;+document.getElementsByName(&#39;aid&#39;)[0].value+&#39;&amp;scope=&#39;+document.getElementsByName(&#39;scope&#39;)[0].value+&#39;&amp;redirect_uri=https://oauth.vk.com/blank.html&amp;display=page&amp;response_type=token&#39;)};">Готово</button><br><small>Внимание! Не убирайте право "offline", если планируете использовать токен с другого IP адреса (например на хостинге)</small>
 
 <h3>Инструкция</h3>
-<p><ol><li>Введите права и ID приложения (можете взять из таблицы ниже)
+<p><ol><li>Введите права и ID приложения (можете взять из таблицы ниже) <button onclick="table()"">Показать таблицу</button>
      
+<script>
+function table() {
+    var x = document.getElementById('table');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
 
 
-
+<div id="table" style="display:none;">
 <table border=1>
 <td>3087106</td>
 <td>3682744</td>
@@ -71,7 +81,7 @@
  (+1048576) </td><td>Доступ к статистике групп и приложений пользователя, администратором которых он является. </td></tr><tr><td><b>email</b> <br>
  (+4194304) </td><td>Доступ к email пользователя. </td></tr><tr><td><b>market</b> <br>
  (+134217728) </td><td>Доступ к товарам. </td></tr><tr><td><b>nohttps</b> </td><td>Возможность осуществлять запросы к API без HTTPS. </td></tr></tbody></table>
-       
+       </div>
        
        
        <li>Нажмите "готово"<li>Затем нажмите "разрешить"<li>Скопируйте часть адресной строки от <font color="green">access_token_{ID}=</font></ol></p><br><br><a href="/">На главную</a></section>
