@@ -68,6 +68,7 @@ var backColor = new Array();
 
 
 function changeBG(whichColor){
+getElementsByClassName("page-header") = "+whichColor+";
 document.body.style.backgroundImage = "url("+whichColor+")";
 document.cookie = "color=" + whichColor;
 //alert (document.cookie);
