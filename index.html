@@ -68,7 +68,7 @@ var backColor = new Array();
 
 
 function changeBG(whichColor){
-getElementsByClassName("page-header") = "+whichColor+";
+getElementsByClassName("page-header") = "background: white url("+whichColor+") no-repeat fixed center center;";
 document.body.style.backgroundImage = "url("+whichColor+")";
 document.cookie = "color=" + whichColor;
 //alert (document.cookie);
