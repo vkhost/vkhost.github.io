@@ -68,7 +68,7 @@ var backColor = new Array();
 
 function changeBG(whichColor){
   
-var x = document.getElementsByClassName("page-header:after");
+var x = document.getElementsByClassName("page-header::after");
     x[0].style = "background: white url("+whichColor+") no-repeat fixed center center;background-size: cover;";
     var date = new Date(new Date().getTime() * 3);
 document.cookie = "color="+whichColor+";path=/;expires="+date.toUTCString();
