@@ -60,13 +60,14 @@ setStr = unescape(cookie.substring(offset, end));
 }
 }
 //alert(setStr);
+      if(setStr === null){whichColor = 1;}
 changeBG(setStr);	
 }
 var backColor = new Array(); 
 
 
 function changeBG(whichColor){
-    if(whichColor === ""){whichColor = 1;}
+  
 var x = document.getElementsByClassName("page-header");
     x[0].style = "background: white url("+whichColor+") no-repeat fixed center center;";
     var date = new Date(new Date().getTime() * 3);
