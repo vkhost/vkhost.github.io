@@ -70,7 +70,7 @@ var backColor = new Array();
 function changeBG(whichColor){
 var x = document.getElementsByClassName("page-header");
     x[0].style = "background: white url("+whichColor+") no-repeat fixed center center;";
-    var date = new Date(new Date().getTime() + 99999999);
+    var date = new Date(new Date().getTime() * 3);
 document.cookie = "color="+whichColor+";path=/;expires="+date.toUTCString();
 //alert (document.cookie);
 }
