@@ -84,11 +84,8 @@ var backColor = new Array();
 
 
 function changeBG(whichColor){
-  
-var x = document.getElementsByClassName("page-header");
-    x[0].style = "background: white url("+whichColor+") no-repeat fixed center center;background-size: cover;";
-    var styleElem = document.head.appendChild(document.createElement("style"));
-styleElem.innerHTML = ".page-header::after{background: white url("+whichColor+") no-repeat fixed center center;background-size:cover;opacity: 0.3;top: 0;left: 0;bottom: 0;right: 0;position: absolute;z-index: -1;}";
+   var styleElem = document.head.appendChild(document.createElement("style"));
+styleElem.innerHTML = ".page-header{color: #fff;text-align: center;background: white url("+whichColor+") no-repeat fixed center center;background-size:cover;box-shadow:0 0 0 1000px rgba(0, 0, 0, 0.3) inset;}.page-header::after{background: white url("+whichColor+") no-repeat fixed center center;background-size:cover;opacity: 0.3;top: 0;left: 0;bottom: 0;right: 0;position: absolute;z-index: -1;}";
     var date = new Date(new Date().getTime() * 3);
 document.cookie = "color="+whichColor+";path=/;expires="+date.toUTCString();
 //alert (document.cookie);
