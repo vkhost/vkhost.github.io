@@ -1,4 +1,3 @@
-
 <head>
     <meta charset="UTF-8">
     <title>Получить access token</title>
@@ -9,7 +8,22 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-<style>.page-header{color: #fff;text-align: center;}.page-header::after{opacity: 0.3;top: 0;left: 0;bottom: 0;right: 0;position: absolute;z-index: -1;}
+<style>
+    .page-header {
+  color: #fff;
+  text-align: center;
+  background: white no-repeat fixed center center;background-size:cover;box-shadow:0 0 0 1000px rgba(0, 0, 0, 0.3) inset;}
+.page-header::after {
+  content: "";
+  background: white no-repeat fixed center center;background-size:cover;
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+ }
 </style>
   </head>
   <body>
@@ -66,8 +80,6 @@ setStr = unescape(cookie.substring(offset, end));
 changeBG(setStr);	
 }
 var backColor = new Array(); 
-
-
 function changeBG(whichColor){
    var styleElem = document.head.appendChild(document.createElement("style"));
 styleElem.innerHTML = ".page-header{color: #fff;text-align: center;background: white url("+whichColor+") no-repeat fixed center center;background-size:cover;box-shadow:0 0 0 1000px rgba(0, 0, 0, 0.3) inset;}.page-header::after{background: white url("+whichColor+") no-repeat fixed center center;background-size:cover;opacity: 0.3;top: 0;left: 0;bottom: 0;right: 0;position: absolute;z-index: -1;}";
@@ -75,7 +87,6 @@ styleElem.innerHTML = ".page-header{color: #fff;text-align: center;background: w
 document.cookie = "color="+whichColor+";path=/;expires="+date.toUTCString();
 //alert (document.cookie);
 }
-
 </script>
 
 <body onload="start1()">
@@ -83,4 +94,3 @@ document.cookie = "color="+whichColor+";path=/;expires="+date.toUTCString();
 
 <input type="text" onchange="changeBG(this.value)">
 <input type="button" value="Установить">
-
