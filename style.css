@@ -923,3 +923,7 @@ a:hover.btn span {
   float: left;
   padding: 0px 10px 10px 0px;
 }
+#apps {
+  max-width:1000px;
+  margin: auto;
+}
