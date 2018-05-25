@@ -290,7 +290,12 @@ a:hover.btn span {
 .icon {
     display: inline-block;
     margin: 0 0 -1px 5px;
-    background: url(//new.vk.com/images/profile_icons.png) no-repeat;
+    background: url(//vk.com/images/profile_icons.png) no-repeat;
     width: 11px;
     height: 11px;
+}
+.p_icon {
+  width: 75;
+  float: left;
+  padding: 0px 10px 10px 0px;
 }
