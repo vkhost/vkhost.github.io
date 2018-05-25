@@ -1,95 +1,95 @@
-<head>
+<html>
+  <head>
     <meta charset="UTF-8">
     <title>Получить access token</title>
-<link rel="shortcut icon" href="https://vk.com/images/favicon_vk_2x.ico"></link>
-<meta property="og:image" content="https://pp.vk.me/c633630/v633630077/42b24/wQMyIzknDmU.jpg" />
-   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" href="https://vk.com/images/favicon_vk_2x.ico">
+    <meta property="og:image" content="https://pp.vk.me/c633630/v633630077/42b24/wQMyIzknDmU.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-<style>
-    .page-header {
-  color: #fff;
-  text-align: center;
-  background: white no-repeat fixed center center;background-size:cover;box-shadow:0 0 0 1000px rgba(0, 0, 0, 0.3) inset;}
-.page-header::after {
-  content: "";
-  background: white no-repeat fixed center center;background-size:cover;
-  opacity: 0.3;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;
- }
-</style>
   </head>
   <body>
     <section class="page-header">
       <h1 class="project-name">Получить access token</h1>
       <h2 class="project-tagline">Выберите приложение</h2>
-<a onclick="window.open('https://oauth.vk.com/authorize?client_id=3698024&amp;scope=friends,photos,audio,video,docs,notes,pages,status,offers,questions,wall,groups,messages,notifications,stats,ads,market,offline&amp;redirect_uri=https://api.vk.com/blank.html&amp;display=page&amp;response_type=token')" class="btn">Instagram<span><img src="https://pp.vk.me/c633227/v633227376/33210/KLgiwO5ccfk.jpg" style="float:left;padding:0px 10px 10px 0px;">Мобильное приложение для публикации фотографий.<br>Иконка:<div class="icon" style="background-position: 0 -240px;"></div></span></a>
-<a onclick="window.open('https://oauth.vk.com/authorize?client_id=2685278&amp;scope=friends,photos,audio,video,docs,notes,pages,status,offers,questions,wall,groups,messages,notifications,stats,ads,market,offline&amp;redirect_uri=https://api.vk.com/blank.html&amp;display=page&amp;response_type=token')" class="btn">Kate Mobile<span><img src="https://pp.vk.me/c412825/v412825174/6520/pOl7BT1mFLA.jpg" style="float:left;padding:0px 10px 10px 0px;">ВКонтакте для Android<br>Иконка:<div class="icon" style="background-position: 0 -132px;"></div></span></a>
-<a onclick="window.open('https://oauth.vk.com/authorize?client_id=4083558&amp;scope=friends,photos,audio,video,docs,notes,pages,status,offers,questions,wall,groups,messages,notifications,stats,ads,market,offline&amp;redirect_uri=https://api.vk.com/blank.html&amp;display=page&amp;response_type=token')" class="btn">VFeed<span><img src="https://pp.vk.me/c613529/v613529371/1675f/ulh_8ztkjUo.jpg" style="float:left;padding:0px 10px 10px 0px;">VFeed для iphone<br>Иконка:<div class="icon" style="background-position: 0 -132px;"></div></span></a>
-<a onclick="window.open('https://oauth.vk.com/authorize?client_id=6121396&amp;scope=friends,photos,audio,video,docs,notes,pages,status,offers,questions,wall,groups,messages,notifications,stats,ads,market,offline&amp;redirect_uri=https://api.vk.com/blank.html&amp;display=page&amp;response_type=token')" class="btn">VK Admin<span><img src="https://pp.userapi.com/c836324/v836324157/57e45/7V9YA73ALQk.jpg" style="float:left;padding:0px 10px 10px 0px;">VK Admin — приложение для администраторов сообществ. Общайтесь с клиентами и подписчиками от имени Ваших сообществ ВКонтакте, управляйте группой и отслеживайте статистику с мобильного телефона.<br>Иконка:<div class="icon" style="background-position: 0 -330px;"></div></span></a>
-<a onclick="window.open('https://oauth.vk.com/authorize?client_id=5776857&amp;scope=friends,photos,audio,video,docs,notes,pages,status,offers,questions,wall,groups,messages,notifications,stats,ads,market,offline&amp;redirect_uri=https://api.vk.com/blank.html&amp;display=page&amp;response_type=token')" class="btn">VK Admin (iOS)<span><img src="https://pp.userapi.com/c638825/v638825693/44989/v193GbtPQqE.jpg" style="float:left;padding:0px 10px 10px 0px;">Приложение для организации обратной связи с клиентами, пользователями и подписчиками Ваших сообществ.<br>Иконка:<div class="icon" style="background-position: 0 -330px;"></div></span></a>
-<a onclick="window.open('https://oauth.vk.com/authorize?client_id=5676187&amp;scope=friends,photos,audio,video,docs,notes,pages,status,offers,questions,wall,groups,messages,notifications,stats,ads,market,offline&amp;redirect_uri=https://api.vk.com/blank.html&amp;display=page&amp;response_type=token')" class="btn">VK Live Android<span><img src="https://pp.userapi.com/c638919/v638919892/28b50/5rcr8V2OJOM.jpg" style="float:left;padding:0px 10px 10px 0px;">Иконка:<div class="icon" style="background-position: 0 -132px;"></div></span></a><br>
-<a onclick="window.open('https://oauth.vk.com/authorize?client_id=3116505&amp;scope=friends,photos,audio,video,docs,notes,pages,status,offers,questions,wall,groups,messages,notifications,stats,ads,market,offline&amp;redirect_uri=https://api.vk.com/blank.html&amp;display=page&amp;response_type=token')" class="btn">VK API<span><img src="https://pp.vk.me/c629400/v629400981/219b6/QQRMqq-KYI0.jpg" style="float:left;padding:0px 10px 10px 0px;">Иконка:<div class="icon" style="background-position: 0 -132px;"></div></span></a>
-<a onclick="window.open('https://oauth.vk.com/authorize?client_id=4986954&amp;scope=friends,photos,audio,video,docs,notes,pages,status,offers,questions,wall,groups,messages,notifications,stats,ads,market,offline&amp;redirect_uri=https://api.vk.com/blank.html&amp;display=page&amp;response_type=token')" class="btn">Snapster for IPhone<span><img src="https://pp.vk.me/c630131/v630131616/287cc/rSOzg0KiDQ4.jpg" style="float:left;padding:0px 10px 10px 0px;">Share the important things using rooms, a new tool for photo sharing. Publish photos of your passions, collect photos with friends, follow updates from celebrities.<br>Иконка: <img src="https://new.vk.com/images/chronicle/icon_tab.png"></span></a>
-<a onclick="window.open('https://oauth.vk.com/authorize?client_id=4580399&amp;scope=friends,photos,audio,video,docs,notes,pages,status,offers,questions,wall,groups,messages,notifications,stats,ads,market,offline&amp;redirect_uri=https://api.vk.com/blank.html&amp;display=page&amp;response_type=token')" class="btn">Snapster for Android<span><img src="https://pp.vk.me/c630131/v630131293/23541/5sAVktBL3g8.jpg" style="float:left;padding:0px 10px 10px 0px;">Share the important things using rooms, a new tool for photo sharing. Publish photos of your passions, collect photos with friends, follow updates from celebrities.<br>Иконка: <img src="https://new.vk.com/images/chronicle/icon_tab.png"></span></a>
-<a onclick="window.open('https://oauth.vk.com/authorize?client_id=5554806&amp;scope=friends,photos,audio,video,docs,notes,pages,status,offers,questions,wall,groups,messages,notifications,stats,ads,market,offline&amp;redirect_uri=https://api.vk.com/blank.html&amp;display=page&amp;response_type=token')" class="btn">Vinci<span><img src="https://pp.vk.me/c615828/v615828550/26d9a/4KjT23QWGIM.jpg" style="float:left;padding:0px 10px 10px 0px;">Преображайте свои фотографии с помощью нейросетей и искусственного разума.<br>Иконка:<div class="icon" style="background-position: 0 -308px;"></div></span></a>
-<a href="other" class="btn">Другое</a>
-<a href="group" class="btn">Для группы</a>
-<a href="scope" class="btn">Указать права</a>
-                          
-      
-      
+      <a onclick="window.open('https://oauth.vk.com/authorize?client_id=3698024&amp;scope=friends,photos,audio,video,docs,notes,pages,status,offers,questions,wall,groups,messages,notifications,stats,ads,market,offline&amp;redirect_uri=https://api.vk.com/blank.html&amp;display=page&amp;response_type=token')" class="btn">
+        Instagram
+        <span>
+          <img src="https://pp.userapi.com/c633227/v633227376/33212/KU3LDlKwxo0.jpg" class="p_icon">Мобильное приложение для публикации фотографий.<br>Иконка:
+          <div class="icon" style="background-position: 0 -240px;"></div>
+        </span>
+      </a>
+      <a onclick="window.open('https://oauth.vk.com/authorize?client_id=2685278&amp;scope=friends,photos,audio,video,docs,notes,pages,status,offers,questions,wall,groups,messages,notifications,stats,ads,market,offline&amp;redirect_uri=https://api.vk.com/blank.html&amp;display=page&amp;response_type=token')" class="btn">
+        Kate Mobile
+        <span>
+          <img src="https://pp.userapi.com/c412825/v412825174/6522/nEKTkD_Uqcg.jpg" class="p_icon">ВКонтакте для Android<br>Иконка:
+          <div class="icon" style="background-position: 0 -132px;"></div>
+        </span>
+      </a>
+      <a onclick="window.open('https://oauth.vk.com/authorize?client_id=4083558&amp;scope=friends,photos,audio,video,docs,notes,pages,status,offers,questions,wall,groups,messages,notifications,stats,ads,market,offline&amp;redirect_uri=https://api.vk.com/blank.html&amp;display=page&amp;response_type=token')" class="btn">
+        VFeed
+        <span>
+          <img src="https://pp.userapi.com/c613529/v613529371/16761/Mjwh_-ADFK8.jpg" class="p_icon">VFeed для iphone<br>Иконка:
+          <div class="icon" style="background-position: 0 -132px;"></div>
+        </span>
+      </a>
+      <a onclick="window.open('https://oauth.vk.com/authorize?client_id=6121396&amp;scope=friends,photos,audio,video,docs,notes,pages,status,offers,questions,wall,groups,messages,notifications,stats,ads,market,offline&amp;redirect_uri=https://api.vk.com/blank.html&amp;display=page&amp;response_type=token')" class="btn">
+        VK Admin
+        <span>
+          <img src="https://pp.userapi.com/c836324/v836324157/57e47/kmuk5kWubsA.jpg" class="p_icon">VK Admin — приложение для администраторов сообществ. Общайтесь с клиентами и подписчиками от имени Ваших сообществ ВКонтакте, управляйте группой и отслеживайте статистику с мобильного телефона.<br>Иконка:
+          <div class="icon" style="background-position: 0 -330px;"></div>
+        </span>
+      </a>
+      <a onclick="window.open('https://oauth.vk.com/authorize?client_id=5776857&amp;scope=friends,photos,audio,video,docs,notes,pages,status,offers,questions,wall,groups,messages,notifications,stats,ads,market,offline&amp;redirect_uri=https://api.vk.com/blank.html&amp;display=page&amp;response_type=token')" class="btn">
+        VK Admin (iOS)
+        <span>
+          <img src="https://pp.userapi.com/c831308/v831308960/d4af9/0o-EVdYjXmk.jpg" class="p_icon">Приложение для организации обратной связи с клиентами, пользователями и подписчиками Ваших сообществ.<br>Иконка:
+          <div class="icon" style="background-position: 0 -330px;"></div>
+        </span>
+      </a>
+      <br>
+      <a onclick="window.open('https://oauth.vk.com/authorize?client_id=5256902&amp;scope=friends,photos,audio,video,docs,notes,pages,status,offers,questions,wall,groups,messages,notifications,stats,ads,market,offline&amp;redirect_uri=https://api.vk.com/blank.html&amp;display=page&amp;response_type=token')" class="btn">
+        VK Live
+        <span>
+          <img src="https://pp.userapi.com/c637831/v637831651/1a1f8/qm4Rf9IX-dw.jpg" class="p_icon">Иконка:
+          <div class="icon" style="background-position: 0 -132px;"></div>
+        </span>
+      </a>
+      <a onclick="window.open('https://oauth.vk.com/authorize?client_id=5676187&amp;scope=friends,photos,audio,video,docs,notes,pages,status,offers,questions,wall,groups,messages,notifications,stats,ads,market,offline&amp;redirect_uri=https://api.vk.com/blank.html&amp;display=page&amp;response_type=token')" class="btn">
+        VK Live Android
+        <span>
+          <img src="https://pp.userapi.com/c638919/v638919892/28b52/kHZvh2UeXk8.jpg" class="p_icon">Иконка:
+          <div class="icon" style="background-position: 0 -132px;"></div>
+        </span>
+      </a>
+      <a onclick="window.open('https://oauth.vk.com/authorize?client_id=3116505&amp;scope=friends,photos,audio,video,docs,notes,pages,status,offers,questions,wall,groups,messages,notifications,stats,ads,market,offline&amp;redirect_uri=https://api.vk.com/blank.html&amp;display=page&amp;response_type=token')" class="btn">
+        VK API
+        <span>
+          <img src="https://pp.userapi.com/c840138/v840138345/787f9/ZTLHQaj4S7U.jpg" class="p_icon">Иконка:
+          <div class="icon" style="background-position: 0 -132px;"></div>
+        </span>
+      </a>
+      <a onclick="window.open('https://oauth.vk.com/authorize?client_id=5554806&amp;scope=friends,photos,audio,video,docs,notes,pages,status,offers,questions,wall,groups,messages,notifications,stats,ads,market,offline&amp;redirect_uri=https://api.vk.com/blank.html&amp;display=page&amp;response_type=token')" class="btn">
+        Vinci
+        <span>
+          <img src="https://pp.userapi.com/c615828/v615828550/26d9c/Z7F5bOheDO8.jpg" class="p_icon">Преображайте свои фотографии с помощью нейросетей и искусственного разума.<br>Иконка:
+          <div class="icon" style="background-position: 0 -308px;"></div>
+        </span>
+      </a>
+      <a href="other" class="btn">Другое</a>
+      <a href="group" class="btn">Для группы</a>
+      <a href="scope" class="btn">Указать права</a>
     </section>
-
     <section class="main-content">
       <h3>Инструкция</h3>
-
-<p><ol><li>Выберите приложение<li>Нажмите на него<li>Затем нажмите "разрешить"<li>Скопируйте часть адресной строки от <font color="green">access_token=</font> до <font color="green">&amp;expires_in</font></section>
-</body>
-      
-      
-      
-      <script language="JavaScript">
-function start1(){
-var cookie = " " + document.cookie;
-var search = " " + "color" + "=";
-var setStr = null;
-var offset = 0;
-var end = 0;
-if (cookie.length > 0) {
-offset = cookie.indexOf(search);
-if (offset != -1) {
-offset += search.length;
-end = cookie.indexOf(";", offset)
-if (end == -1) {
-end = cookie.length;
-}
-setStr = unescape(cookie.substring(offset, end));
-}
-}
-//alert(setStr);
-      if(setStr == null){setStr = "https://vkhost.github.io/stylesheets/hat.png";}
-changeBG(setStr);	
-}
-var backColor = new Array(); 
-function changeBG(whichColor){
-   var styleElem = document.head.appendChild(document.createElement("style"));
-styleElem.innerHTML = ".page-header{color: #fff;text-align: center;background: white url("+whichColor+") no-repeat fixed center center;background-size:cover;box-shadow:0 0 0 1000px rgba(0, 0, 0, 0.3) inset;}.page-header::after{background: white url("+whichColor+") no-repeat fixed center center;background-size:cover;opacity: 0.3;top: 0;left: 0;bottom: 0;right: 0;position: absolute;z-index: -1;}";
-    var date = new Date(new Date().getTime() * 3);
-document.cookie = "color="+whichColor+";path=/;expires="+date.toUTCString();
-//alert (document.cookie);
-}
-</script>
-
-<body onload="start1()">
-
-<div style="position: fixed; top: 0%; right: 0;">
-<input type="text" placeholder="https://vk.com/pic.jpg" onchange="changeBG(this.value)"> <input type="button" value="Установить фон"></div></i></a>
-</div>
+      <p>
+      <ol>
+      <li>Выберите приложение
+      <li>Нажмите на него
+      <li>Затем нажмите "разрешить"
+      <li>Скопируйте часть адресной строки от <font color="green">access_token=</font> до <font color="green">&amp;expires_in</font>
+    </section>
+  </body>
+</html>
