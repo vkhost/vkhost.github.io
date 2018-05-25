@@ -858,7 +858,13 @@ a:hover {
 .site-footer-credits {
 	color: #819198
 }
-
+.btn:hover {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
 a.btn {
   position: relative;
 }
