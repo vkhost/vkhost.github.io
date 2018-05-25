@@ -1,79 +1,29 @@
-<head>
+<html>
+  <head>
     <meta charset="UTF-8">
     <title>Получить access token</title>
-<link rel="shortcut icon" href="https://vk.com/images/favicon_vk_2x.ico"></link>
+    <link rel="shortcut icon" href="https://vk.com/images/favicon_vk_2x.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="/stylesheets/normalize.css" media="screen">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="/stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="/stylesheets/github-light.css" media="screen">
-<style>
-    .page-header {
-  color: #fff;
-  text-align: center;
-  background: white no-repeat fixed center center;background-size:cover;box-shadow:0 0 0 1000px rgba(0, 0, 0, 0.3) inset;}
-.page-header::after {
-  content: "";
-  background: white no-repeat fixed center center;background-size:cover;
-  opacity: 0.3;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;
- }
-</style>
   </head>
   <body>
     <section class="page-header">
       <h1 class="project-name">Получить access token</h1>
-   
     </section>
-
     <section class="main-content">
       Введите ID приложения: 
-<input value=3116505 name="aid" class="search-bar">
-<button class="button button-small button-green" onclick="if (document.getElementsByName(&#39;aid&#39;)[0].value){window.open(&#39;https://oauth.vk.com/authorize?client_id=&#39;+document.getElementsByName(&#39;aid&#39;)[0].value+&#39;&amp;scope=friends,photos,audio,video,docs,notes,pages,status,offers,questions,wall,groups,messages,notifications,stats,ads,market,offline&amp;redirect_uri=https://oauth.vk.com/blank.html&amp;display=page&amp;response_type=token&#39;)};">Готово</button>
-<h3>Инструкция</h3>
-<p><ol><li>Введите ID приложения<li>Нажмите "готово"<li>Затем нажмите "разрешить"<li>Скопируйте часть адресной строки от <font color="green">access_token=</font> до <font color="green">&amp;expires_in</font></ol></p><br><br><a href="/">На главную</a></section>
-</body>
- 
-      
-      <script language="JavaScript">
-function start1(){
-var cookie = " " + document.cookie;
-var search = " " + "color" + "=";
-var setStr = null;
-var offset = 0;
-var end = 0;
-if (cookie.length > 0) {
-offset = cookie.indexOf(search);
-if (offset != -1) {
-offset += search.length;
-end = cookie.indexOf(";", offset)
-if (end == -1) {
-end = cookie.length;
-}
-setStr = unescape(cookie.substring(offset, end));
-}
-}
-//alert(setStr);
-      if(setStr == null){setStr = "https://vkhost.github.io/stylesheets/hat.png";}
-changeBG(setStr);	
-}
-var backColor = new Array(); 
-function changeBG(whichColor){
-   var styleElem = document.head.appendChild(document.createElement("style"));
-styleElem.innerHTML = ".page-header{color: #fff;text-align: center;background: white url("+whichColor+") no-repeat fixed center center;background-size:cover;box-shadow:0 0 0 1000px rgba(0, 0, 0, 0.3) inset;}.page-header::after{background: white url("+whichColor+") no-repeat fixed center center;background-size:cover;opacity: 0.3;top: 0;left: 0;bottom: 0;right: 0;position: absolute;z-index: -1;}";
-    var date = new Date(new Date().getTime() * 3);
-document.cookie = "color="+whichColor+";path=/;expires="+date.toUTCString();
-//alert (document.cookie);
-}
-</script>
-
-<body onload="start1()">
-
-<div style="position: fixed; top: 0%; right: 0;">
-<input type="text" placeholder="https://vk.com/pic.jpg" onchange="changeBG(this.value)"> <input type="button" value="Установить фон"></div></i></a>
-</div>
+      <input value=3116505 name="aid" class="search-bar">
+      <button class="button button-small button-green" onclick="if (document.getElementsByName(&#39;aid&#39;)[0].value){window.open(&#39;https://oauth.vk.com/authorize?client_id=&#39;+document.getElementsByName(&#39;aid&#39;)[0].value+&#39;&amp;scope=friends,photos,audio,video,docs,notes,pages,status,offers,questions,wall,groups,messages,notifications,stats,ads,market,offline&amp;redirect_uri=https://oauth.vk.com/blank.html&amp;display=page&amp;response_type=token&#39;)};">Готово</button>
+      <h3>Инструкция</h3>
+      <p>
+      <ol>
+        <li>Введите ID приложения
+        <li>Нажмите "готово"
+        <li>Затем нажмите "разрешить"
+        <li>Скопируйте часть адресной строки от <font color="green">access_token=</font> до <font color="green">&amp;expires_in</font>
+      </ol>
+      </p><br><br><a href="/">На главную</a>
+    </section>
+  </body>
+</html>
