@@ -10,12 +10,11 @@ var apps = [
 [5554806,'Vinci','https://pp.userapi.com/c615828/v615828550/26d9c/Z7F5bOheDO8.jpg','Преображайте свои фотографии с помощью нейросетей и искусственного разума.',308],
 [6334949,'Клевер','https://pp.userapi.com/c841521/v841521530/7d187/IKobOsNO_lY.jpg','',132],
 [6378721,'Клевер — игра с призами','https://pp.userapi.com/c841122/v841122545/7b5be/mjTfevye8ZY.jpg','',132],
-[6217559,'VK Pay','https://pp.userapi.com/c845121/v845121610/3bd18/cFSV2INNqAo.jpg','Платформа социальной коммерции ВКонтакте',132],
 [3116505,'VK API','https://pp.userapi.com/c840138/v840138345/787f9/ZTLHQaj4S7U.jpg','',132],
 ];
 for (var app in apps) {
 var adiv = document.getElementById('apps');
-adiv.innerHTML += "<a onclick=\"window.open('https://oauth.vk.com/authorize?client_id="+apps[app][0]+"&amp;scope=friends,photos,audio,video,docs,notes,pages,status,offers,questions,wall,groups,messages,notifications,stats,ads,market,offline&amp;redirect_uri=https://api.vk.com/blank.html&amp;display=page&amp;response_type=token&amp;revoke=1')\" class=\"btn\">"+apps[app][1]+"<span><img src=\""+apps[app][2]+"\" class=\"p_icon\">"+apps[app][3]+"<div>Иконка:<div class=\"icon\" style=\"background-position: 0 -"+apps[app][4]+"px;\"></div></div></span></a>";
+adiv.innerHTML += "<a onclick=\"window.open('https://oauth.vk.com/authorize?client_id="+apps[app][0]+"&amp;scope=1073741823&amp;redirect_uri=https://api.vk.com/blank.html&amp;display=page&amp;response_type=token&amp;revoke=1')\" class=\"btn\">"+apps[app][1]+"<span><img src=\""+apps[app][2]+"\" class=\"p_icon\">"+apps[app][3]+"<div>Иконка:<div class=\"icon\" style=\"background-position: 0 -"+apps[app][4]+"px;\"></div></div></span></a>";
 }
 adiv.innerHTML += "<a href=\"other\" class=\"btn\">Другое</a><a href=\"group\" class=\"btn\">Для группы</a><a href=\"scope\" class=\"btn\">Указать права</a>";
 }
