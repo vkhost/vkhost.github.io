@@ -8,6 +8,9 @@ var apps = [
 [5256902,'VK Live','https://pp.userapi.com/c637831/v637831651/1a1f8/qm4Rf9IX-dw.jpg','',132],
 [5676187,'VK Live Android','https://pp.userapi.com/c638919/v638919892/28b52/kHZvh2UeXk8.jpg','',132],
 [5554806,'Vinci','https://pp.userapi.com/c615828/v615828550/26d9c/Z7F5bOheDO8.jpg','Преображайте свои фотографии с помощью нейросетей и искусственного разума.',308],
+[6334949,'Клевер','https://pp.userapi.com/c841521/v841521530/7d187/IKobOsNO_lY.jpg','',132],
+[6378721,'Клевер — игра с призами','https://pp.userapi.com/c615828/v615828550/26d9c/Z7F5bOheDO8.jpg','',132],
+[6217559,'VK Pay','https://pp.userapi.com/c845121/v845121610/3bd18/cFSV2INNqAo.jpg','Платформа социальной коммерции ВКонтакте',132],
 [3116505,'VK API','https://pp.userapi.com/c840138/v840138345/787f9/ZTLHQaj4S7U.jpg','',132],
 ];
 for (var app in apps) {
