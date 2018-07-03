@@ -15,7 +15,7 @@ var apps = [
 ];
 for (var app in apps) {
 var adiv = document.getElementById('apps');
-adiv.innerHTML += "<a onclick=\"window.open('https://oauth.vk.com/authorize?client_id="+apps[app][0]+"&amp;scope=1073741823&amp;redirect_uri=https://api.vk.com/blank.html&amp;display=page&amp;response_type=token&amp;revoke=1')\" class=\"btn\">"+apps[app][1]+"<span><img src=\""+apps[app][2]+"\" class=\"p_icon\">"+apps[app][3]+"<div>Иконка:<div class=\"icon\" style=\"background-position: 0 -"+apps[app][4]+"px;\"></div></div></span></a>";
+adiv.innerHTML += "<a onclick=\"window.open('https://oauth.vk.com/authorize?client_id="+apps[app][0]+"&amp;scope=1073741823&amp;redirect_uri=https://api.vk.com/blank.html&amp;display=page&amp;response_type=token&amp;revoke=1')\" class=\"btn\">"+apps[app][1]+"<span><img src=\""+apps[app][2]+"\" class=\"p_icon\"><div class=\"desc\">"+apps[app][3]+"<div>Иконка:<div class=\"icon\" style=\"background-position: 0 -"+apps[app][4]+"px;\"></div></div></div></span></a>";
 }
 adiv.innerHTML += "<a href=\"other\" class=\"btn\">Другое</a><a href=\"group\" class=\"btn\">Для группы</a><a href=\"scope\" class=\"btn\">Указать права</a>";
 }
