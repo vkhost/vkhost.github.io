@@ -8,6 +8,7 @@ var apps = [
 [5256902,'VK Live','https://pp.userapi.com/c637831/v637831651/1a1f8/qm4Rf9IX-dw.jpg','',132],
 [5676187,'VK Live Android','https://pp.userapi.com/c638919/v638919892/28b52/kHZvh2UeXk8.jpg','',132],
 [5554806,'Vinci','https://pp.userapi.com/c615828/v615828550/26d9c/Z7F5bOheDO8.jpg','Преображайте свои фотографии с помощью нейросетей и искусственного разума.',308],
+[5530956,'Prisma','https://pp.userapi.com/c633324/v633324499/3a9b0/8ZaEuKGfypU.jpg','Почувствуй себя художником! Преврати фотографии в уникальные произведения искусства:<br>— Фильтры в стиле художников<br>— Завораживающие фотоэффекты<br>— Делись шедеврами в одно нажатие',288],
 [6334949,'Клевер','https://pp.userapi.com/c841521/v841521530/7d187/IKobOsNO_lY.jpg','',132],
 [6378721,'Клевер — игра с призами','https://pp.userapi.com/c841122/v841122545/7b5be/mjTfevye8ZY.jpg','',132],
 [3116505,'VK API','https://pp.userapi.com/c840138/v840138345/787f9/ZTLHQaj4S7U.jpg','',132],
