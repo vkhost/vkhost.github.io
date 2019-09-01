@@ -15,7 +15,7 @@ body {
 	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 16px;
 	line-height: 1.5;
-	color: #606c71
+	color: #ffffff
 }
 
 article,
@@ -510,7 +510,7 @@ th {
 }
 
 a {
-	color: #1e6bb8;
+	color: #1da1f2;
 	text-decoration: none
 }
 
@@ -520,14 +520,14 @@ a:hover {
 
 .btn {
 	display: inline-block;
-	margin-bottom: 1rem;
 	color: rgba(255, 255, 255, 0.7);
 	background-color: rgba(255, 255, 255, 0.08);
 	border-color: rgba(255, 255, 255, 0.2);
 	border-style: solid;
 	border-width: 1px;
 	border-radius: 0.3rem;
-	transition: color 0.2s, background-color 0.2s, border-color 0.2s
+	transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+	margin: 3px 6px 3px 0px
 }
 
 .btn:hover {
@@ -556,22 +556,19 @@ a:hover {
 
 @media screen and (max-width: 42em) {
 	.btn {
-		display: block;
-		width: 100%;
 		padding: 0.75rem;
 		font-size: 0.9rem
 	}
-	.btn+.btn {
-		margin-top: 1rem;
-		margin-left: 0
+	.app>.btn {
+		display: block;
+		width: 100%
 	}
 }
 
 .page-header {
 	color: #fff;
 	text-align: center;
-	background-color: #159957;
-	background-image: linear-gradient(120deg, #155799, #159957)
+	background: linear-gradient(135deg, #1da1f2, #981ceb);
 }
 
 @media screen and (min-width: 64em) {
@@ -640,6 +637,7 @@ a:hover {
 }
 
 .main-content {
+	color: #606c71;
 	word-wrap: break-word
 }
 
@@ -683,7 +681,7 @@ a:hover {
 	margin-top: 2rem;
 	margin-bottom: 1rem;
 	font-weight: normal;
-	color: #159957
+	color: #1da1f2
 }
 
 .main-content p {
@@ -856,75 +854,244 @@ a:hover {
 .site-footer-credits {
 	color: #819198
 }
-.btn:hover {
-    color: rgba(255, 255, 255, 0.8);
-    text-decoration: none;
-    background-color: rgba(255, 255, 255, 0.2);
-    border-color: rgba(255, 255, 255, 0.3);
-    cursor: pointer;
-}
-a.btn {
-  position: relative;
-}
-a.btn span {
 
-  position: absolute;
-  width:500px;
-  color: #000000;
-  background: #FFFFFF;
-  border: 1px solid #C5D0DB;
-  padding:10px;
-  visibility: hidden;
-  border-radius: 2px;
-font-size:14px;
-    text-align: left;
+.app {
+	position: relative;
+	display: inline-block;
+	margin: .3rem
 }
-a.btn span:before {
-  content: '';
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -186px;
-  width: 0; height: 0;
-  border-top: 12px solid #C5D0DB;
-  border-right: 12px solid transparent;
-  border-left: 12px solid transparent;
+
+.btn:hover {
+	color: rgba(255, 255, 255, 0.8);
+	text-decoration: none;
+	background-color: rgba(255, 255, 255, 0.2);
+	border-color: rgba(255, 255, 255, 0.3);
+	cursor: pointer
 }
-a.btn span:after {
-  content: '';
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -185px;
-  width: 0; height: 0;
-  border-top: 11px solid #FFFFFF;
-  border-right: 11px solid transparent;
-  border-left: 11px solid transparent;
+
+.btn {
+	position: relative
 }
-a:hover.btn span {
-  visibility: visible;
-  opacity: 1;
-  bottom: 70px;
-  left: 50%;
-  margin-left: -76px;
-  z-index: 999;
+
+.app span {
+	display: none;
+	position: absolute;
+	color: #000000;
+	background: #FFFFFF;
+	padding: 10px;
+	width: 500px;
+	visibility: hidden;
+	border-radius: .50rem;
+	font-size: 14px;
+	text-align: left;
+	filter: drop-shadow(-3px 3px 3px rgba(0, 0, 0, 0.2))
 }
+
+.app span:before {
+	content: '';
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -187px;
+	width: 0;
+	height: 0;
+	border-top: 10px solid #FFFFFF;
+	border-right: 10px solid transparent;
+	border-left: 10px solid transparent
+}
+
+.app span:after {
+	content: '';
+	position: absolute;
+	width: 130px;
+	height: 30px
+}
+
+@media (min-width: 42em) {
+	.app:hover span {
+		display: block;
+		visibility: visible;
+		opacity: 1;
+		bottom: 72px;
+		left: 50%;
+		margin-left: -76px;
+		z-index: 999
+	}
+	.modal {
+		padding-top: 50px;
+	}
+	.modal-content {
+		width: 50%;
+		border-radius: .25rem
+	}
+	.modal-header {
+		border-radius: .25rem .25rem 0 0
+	}
+	.modal-footer {
+		border-radius: 0 0 .25rem .25rem
+	}
+}
+
 .icon {
-    display: inline-block;
-    margin: 0 0 -1px 5px;
-    background: url(//vk.com/images/profile_icons.png) no-repeat;
-    width: 11px;
-    height: 11px;
+	display: inline-block;
+	margin: 0 0 -1px 5px;
+	background: url(//vk.com/images/profile_icons_2x.png) no-repeat top left / 13px 341px;
+	width: 11px;
+	height: 11px
 }
+
 .p_icon {
-  width: 75;
-  float: left;
-  padding: 0px 10px 10px 0px;
+	border-radius: .50rem;
+	width: 75px;
+	float: left
 }
-#apps {
-  max-width:1000px;
-  margin: auto;
+
+#apps_block {
+	max-width: 1000px;
+	margin: auto
 }
+
 .desc {
-  margin-left: 75px;
+	padding-left: 10px;
+	display: table
+}
+
+li>span {
+	color: #1da1f2
+}
+
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0, 0, 0, 0.4)
+}
+
+.modal-content {
+	position: relative;
+	margin: auto;
+	padding: 0;
+	min-width: 300px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	-webkit-animation-name: animatetop;
+	-webkit-animation-duration: 0.4s;
+	animation-name: animatetop;
+	animation-duration: 0.4s
+}
+
+@-webkit-keyframes animatetop {
+	from {
+		top: -300px;
+		opacity: 0
+	}
+	to {
+		top: 0;
+		opacity: 1
+	}
+}
+
+@keyframes animatetop {
+	from {
+		top: -300px;
+		opacity: 0
+	}
+	to {
+		top: 0;
+		opacity: 1
+	}
+}
+
+#close_button {
+	color: white;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+	margin-top: 10px
+}
+
+#close_button:hover,
+#close_button:focus {
+	color: #ffffff80;
+	text-decoration: none;
+	cursor: pointer
+}
+
+.modal-header {
+	padding: 2px 16px;
+	background-color: #1da1f2;
+	color: white
+}
+
+.modal-body {
+	padding: 2px 16px;
+	background-color: #264b90
+}
+
+.modal-footer {
+	padding: 2px 16px;
+	background-color: #1da1f2;
+	color: white
+}
+
+label.btn {
+	user-select: none
+}
+
+.pcheck {
+	display: none
+}
+
+.pcheck:checked+label {
+	background: #1da1f2
+}
+
+input.btn:hover {
+	cursor: text
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0
+}
+
+input[type=number] {
+	-moz-appearance: textfield
+}
+
+::placeholder {
+	color: #ffffff33
+}
+
+input,
+button {
+	outline: 0
+}
+
+#err_msg {
+	float: left;
+	margin: 28px 0
+}
+
+#submit {
+	margin: 15px 0
+}
+
+.desc>p {
+	margin: 0 0 7px
+}
+
+#uncheck {
+	color: #1da1f2;
+	cursor: pointer
+}
+
+.modal_bottom_text {
+	display: block;
+	margin: 15px 0
 }
