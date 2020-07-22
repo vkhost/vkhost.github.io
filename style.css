@@ -884,6 +884,7 @@ a:hover {
 	border-radius: .50rem;
 	font-size: 14px;
 	text-align: left;
+	will-change: filter;
 	filter: drop-shadow(-3px 3px 3px rgba(0, 0, 0, 0.2))
 }
 
