@@ -51,7 +51,7 @@ const apps = [
 
 apps.map(app => apps_block.insertAdjacentHTML('beforeend', '<div class="app"><button onclick="auth(' + app[0] + ')" class="btn">' + app[1] + '</button><span><img src="' + app[2] + '" class="p_icon"><div class="desc"><p>' + (app[3] ? app[3] : 'Описание отсутствует') + '</p><p>ID приложения: ' + app[0] + '</p>Иконка в записях:<div class="icon" style="background-position: 0 -' + app[4] + 'px;"></div></div></span></div>'));
 
-apps_block.insertAdjacentHTML('beforeend', '<div class="app"><button class="btn" id="settings">Настройки</button><span><div class="desc">Настройка прав, указание ID приложения, а также получение токена для группы</div></span></div>');
+apps_block.insertAdjacentHTML('beforeend', '<div class="app"><button class="btn" id="settings">Настройки &raquo;</button><span><div class="desc">Настройка прав, указание ID приложения, а также получение токена для группы</div></span></div>');
 
 addPermissions(utypes, permissions);
 addPermissions(gtypes, gpermissions);
