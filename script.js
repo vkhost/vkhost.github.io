@@ -9,7 +9,6 @@ const apps = [
         [3698024, 'Instagram', 'https://pp.userapi.com/c633227/v633227376/33212/KU3LDlKwxo0.jpg', 'Мобильное приложение для публикации фотографий.', 240],
         [2685278, 'Kate Mobile', 'https://pp.userapi.com/c412825/v412825174/6522/nEKTkD_Uqcg.jpg', 'ВКонтакте для Android', 132],
         [4083558, 'VFeed', 'https://pp.userapi.com/c613529/v613529371/16761/Mjwh_-ADFK8.jpg', 'VFeed для iphone', 132],
-        [6146827, 'VK Me', 'https://vk.com/images/dquestion_a.png', '', 132],
         [3116505, 'VK API', 'https://pp.userapi.com/c840138/v840138345/787f9/ZTLHQaj4S7U.jpg', '', 132]
     ],
     utypes = [
