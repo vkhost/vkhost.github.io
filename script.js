@@ -5,6 +5,7 @@ const apps = [
         [5776857, 'VK Admin (iOS)', 'https://pp.userapi.com/c831308/v831308960/d4af9/0o-EVdYjXmk.jpg', 'Приложение для организации обратной связи с клиентами, пользователями и подписчиками Ваших сообществ.', 330],
         [5256902, 'VK Live', 'https://pp.userapi.com/c637831/v637831651/1a1f8/qm4Rf9IX-dw.jpg', '', 132],
         [5676187, 'VK Live Android', 'https://pp.userapi.com/c638919/v638919892/28b52/kHZvh2UeXk8.jpg', '', 132],
+        [6463690, 'Маруся', 'https://sun9-21.userapi.com/JkqI-jWJ2oCcpkhRvMlrAl7JA1grQcHhj4z2wg/UiV7auFcmEA.jpg', 'Медиапоиск', 132],
         [5530956, 'Prisma', 'https://pp.userapi.com/c633324/v633324499/3a9b0/8ZaEuKGfypU.jpg', 'Почувствуй себя художником! Преврати фотографии в уникальные произведения искусства:<br>— Фильтры в стиле художников<br>— Завораживающие фотоэффекты<br>— Делись шедеврами в одно нажатие', 288],
         [3698024, 'Instagram', 'https://pp.userapi.com/c633227/v633227376/33212/KU3LDlKwxo0.jpg', 'Мобильное приложение для публикации фотографий.', 240],
         [2685278, 'Kate Mobile', 'https://pp.userapi.com/c412825/v412825174/6522/nEKTkD_Uqcg.jpg', 'ВКонтакте для Android', 132],
