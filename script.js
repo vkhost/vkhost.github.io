@@ -3,15 +3,19 @@
 const apps = [
         [6121396, 'VK Admin', 'https://pp.userapi.com/c836324/v836324157/57e47/kmuk5kWubsA.jpg', 'VK Admin — приложение для администраторов сообществ. Общайтесь с клиентами и подписчиками от имени Ваших сообществ ВКонтакте, управляйте группой и отслеживайте статистику с мобильного телефона.', 330],
         [5776857, 'VK Admin (iOS)', 'https://pp.userapi.com/c831308/v831308960/d4af9/0o-EVdYjXmk.jpg', 'Приложение для организации обратной связи с клиентами, пользователями и подписчиками Ваших сообществ.', 330],
-        [5256902, 'VK Live', 'https://pp.userapi.com/c637831/v637831651/1a1f8/qm4Rf9IX-dw.jpg', '', 132],
-        [5676187, 'VK Live Android', 'https://pp.userapi.com/c638919/v638919892/28b52/kHZvh2UeXk8.jpg', '', 132],
-        [6463690, 'Маруся', 'https://sun9-21.userapi.com/JkqI-jWJ2oCcpkhRvMlrAl7JA1grQcHhj4z2wg/UiV7auFcmEA.jpg', 'Медиапоиск', 132],
-        [7556576, 'Сферум', 'https://sun9-82.userapi.com/PXTJZjzgguFIjp_-G5Sm4mcacYA17CkBQDrHLQ/Ct2dvK06jr8.jpg', 'Бесплатная платформа для учёбы и общения', 132],
+        [6463690, 'Маруся', 'https://sun9-56.userapi.com/Zbl1njzBDZ4v9shXbclysDxLjeG7KHgYFAlwMw/rb-hbmdVyxI.jpg', 'Медиапоиск', 132],
+        [7556576, 'Сферум', 'https://sun9-6.userapi.com/IkdFMjfnmJl4HJBmooU5si87hJDQsnzp0AsNuA/FJOGudRv_KM.jpg', '', 132],
+        [7598572, 'Сферум Android', 'https://sun9-6.userapi.com/IkdFMjfnmJl4HJBmooU5si87hJDQsnzp0AsNuA/FJOGudRv_KM.jpg', '', 132],
+        [7571751, 'VK Education iOS', 'https://sun9-6.userapi.com/IkdFMjfnmJl4HJBmooU5si87hJDQsnzp0AsNuA/FJOGudRv_KM.jpg', '', 132],
+        [7793118, 'Звонки ВКонтакте', 'https://sun9-70.userapi.com/tLjtkuMT7KLnrF5Y6oLWde6d28VukfCSXD7U8g/9QgR70ZKFG8.jpg', '', 132],
+        [6287487, 'vk.com', 'https://sun9-26.userapi.com/R01NieP5YFWfLuBeXh16HsCY8wV6_Se_ZWbDfA/8YNxS0zNoFc.jpg', '', 132],
+        [7799655, 'VK Почта', 'https://sun9-72.userapi.com/GmN1wML-yv_PWHSbmTQ5-zVukaItizcL3M3_Xw/y4fC58Uj6lg.jpg', '', 132],
+        [7539952, 'Почта Mail.ru', 'https://sun9-37.userapi.com/mAVW07zs1VXCpH8q-vwccaIyz3pZ49JkW1-8eQ/G87utOTbowo.jpg', 'Почта', 132],
+        [7497650, 'VK Connect', 'https://vk.com/images/dquestion_a.png', '', 132],
         [5530956, 'Prisma', 'https://pp.userapi.com/c633324/v633324499/3a9b0/8ZaEuKGfypU.jpg', 'Почувствуй себя художником! Преврати фотографии в уникальные произведения искусства:<br>— Фильтры в стиле художников<br>— Завораживающие фотоэффекты<br>— Делись шедеврами в одно нажатие', 288],
         [3698024, 'Instagram', 'https://pp.userapi.com/c633227/v633227376/33212/KU3LDlKwxo0.jpg', 'Мобильное приложение для публикации фотографий.', 240],
         [2685278, 'Kate Mobile', 'https://pp.userapi.com/c412825/v412825174/6522/nEKTkD_Uqcg.jpg', 'ВКонтакте для Android', 132],
-        [4083558, 'VFeed', 'https://pp.userapi.com/c613529/v613529371/16761/Mjwh_-ADFK8.jpg', 'VFeed для iphone', 132],
-        [3116505, 'VK API', 'https://pp.userapi.com/c840138/v840138345/787f9/ZTLHQaj4S7U.jpg', '', 132]
+        [4083558, 'VFeed', 'https://pp.userapi.com/c613529/v613529371/16761/Mjwh_-ADFK8.jpg', 'VFeed для iphone', 132]
     ],
     utypes = [
         [0, 'Уведомления', 'notify', 'только для iframe-приложений'],
